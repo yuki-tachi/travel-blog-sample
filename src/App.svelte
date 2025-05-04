@@ -4,7 +4,8 @@
   import Counter from "./lib/Counter.svelte";
   import Pickup from "./lib/Pickup.svelte";
 
-  const articleCount = Math.floor(Math.random() * 4) + 2;
+  const articleCount = Math.floor(Math.random() * 3) + 3;
+  console.log(articleCount);
   // ダミーデータ配列
   const pickUpArticles = Array.from({ length: articleCount }, (_, i) => ({
     img: `https://picsum.photos/400/200?random=${i + 1}`,
